@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(44, 36, 36));
+}
+
+#main{
+    max-width: 1400px;
+}
+
+
+/* Inicio styles header */
+#imagebt{
+    width: 120px;
+    animation: imgArriving 5s;
+}
+@keyframes imgArriving{
+    0%{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.options{
+    font-size: 1.3rem;
+    animation: optionsArriving 5s;
+}
+@keyframes optionsArriving{
+    from{
+        margin-top: -1000px;
+    }to{
+        margin-top: 0px;
+    }
+}
+
+#paragConhe{
+    color: white;
+    position: absolute;
+    margin-top: 160px;
+    display: none;
+}
+
+.documentationcolorclass{
+    animation: documentationcolor 5s;
+    
+}
+@keyframes documentationcolor{
+    from{
+        border-bottom: 1px solid white;
+    }to{
+        border-bottom: 2px solid green;
+    }
+}
+/* Fim styles header */
